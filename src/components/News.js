@@ -161,7 +161,7 @@ export class News extends Component {
                   </div>
                 );
               }
-             return null;
+             return null;}
            )}
             </div>
           </div>
