@@ -156,7 +156,7 @@ export class News extends Component {
                       newsUrl={element.url}
                       author={element.author}
                       date={element.publishedAt}
-                      source={element.source.name?element.source.name:null}
+                      source={element.source.name===undefined?null:element.source.name}
                      // source="this is source"
                     />
                   </div>
