@@ -2,8 +2,8 @@
 
 import axios from "axios";
 
-const url = "https://newsappbackend.onrender.com";
-
+// const url = "https://newsappbackend.onrender.com";
+const url ="https://newsbackend.onrender.com"
 export const getGeneral = async () => {
   try {
     // console.log("start");
