@@ -142,6 +142,7 @@ export class News extends Component {
           <div className="container ">
             <div className="row">
               {this.state.articles.map((element) => {
+                console.log(element.author);
                 return (
                   <div className="col-md-4" key={element.url}>
                     <NewsItem
@@ -155,8 +156,8 @@ export class News extends Component {
                       newsUrl={element.url}
                       author={element.author}
                       date={element.publishedAt}
-                      // source={element.source.name}
-                     source="this is source"
+                      source={element.source.name}
+                     // source="this is source"
                     />
                   </div>
                 );
