@@ -35,7 +35,7 @@ export default class NewsItem extends Component {
             }
             className="card-img-top"
             alt="..."
-            style={{ width: "250px", height: "200px" }} 
+            style={{height: "200px" }} 
           />
           <div className="card-body">
             <h5 className="card-title">{title}...</h5>
