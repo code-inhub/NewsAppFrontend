@@ -123,7 +123,6 @@ export class News extends Component {
   //   });
   // };
   render() {
-    console.log("render");
     return (
       <>
         <br />
@@ -142,8 +141,8 @@ export class News extends Component {
           <div className="container ">
             <div className="row">
               {this.state.articles.map((element) => {
-                console.log(element.author);
-                return (
+              if (element?.author) {
+      return (
                   <div className="col-md-4" key={element.url}>
                     <NewsItem
                       title={element.title ? element.title.slice(0, 45) : ""}
@@ -161,7 +160,9 @@ export class News extends Component {
                     />
                   </div>
                 );
-              })}
+              }
+             return null;
+           )}
             </div>
           </div>
         </InfiniteScroll>{" "}
