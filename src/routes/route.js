@@ -2,7 +2,7 @@
 
 import axios from "axios";
 
-const url = "https://newsbackend.onrender.com";
+const url = "https://newsappbackend.onrender.com";
 
 export const getGeneral = async () => {
   try {
