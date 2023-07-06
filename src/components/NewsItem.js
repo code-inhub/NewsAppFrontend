@@ -35,7 +35,13 @@ export default class NewsItem extends Component {
             }
             className="card-img-top"
             alt="..."
-            style={{height: "200px", width:"350px" }} 
+             style={{
+                    height: "200px",
+                    width: "350px",
+                    "@media (max-width: 380px)": {
+                    width: "100%", // Adjust the width for phone screens here
+                         },
+                  }} 
           />
           <div className="card-body">
             <h5 className="card-title">{title}...</h5>
